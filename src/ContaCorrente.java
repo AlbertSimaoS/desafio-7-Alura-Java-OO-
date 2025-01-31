@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+public class ContaCorrente extends ContaBancaria{
+    private double tarifaMensal;
 
-public class ContaCorrente {
+    public void cobrarTarifaMensal() {
+        saldo -= tarifaMensal;
+        System.out.println("Tarifa mensal de " + tarifaMensal + " cobrada. Saldo atual: " + saldo);
+    }
 }
